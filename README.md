@@ -2,8 +2,8 @@
 
 FastMCP-based SQLite toolkit that can perform most standard SQL queries such as SELECT, INSERT, UPDATE, DELETE, ALTER, JOIN, ect'.
 Some of the simple or specific operation can performed via dedicated functions (tools) such as `insert_row()`, `update_rows()`, `delete_rows()`, `add_column()`, given explicit arguments. 
-Designed to be used with via MCP protocol with LLMs frontends such as [LM Studio](https://lmstudio.ai).
 For complex queries or ones that are given entirely in natural language can be performed via raw SQL string with `execute_sql_query()`.
+Designed to be used with via MCP protocol with LLMs frontends such as [LM Studio](https://lmstudio.ai).
 
 
 ## ✅ Features
