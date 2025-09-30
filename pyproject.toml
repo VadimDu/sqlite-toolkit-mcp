@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-tool"
+version = "0.1.0"
+description = "SQLite toolkit build with FastMCP to perform standard SQL queries for LLM/agents frontends such as LM-Studio"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Vadim-Dani Dubinsky", email = "dani.dubinsky@gmail.com"}]
+
+requires-python = ">=3.8"
+
+dependencies = [
+    "fastmcp>=2.0.0",
+    "pydantic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pytest",
+]
+
+[project.scripts]
+sqlite-tool = "sqlite_tool.sqlite_tool_mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
